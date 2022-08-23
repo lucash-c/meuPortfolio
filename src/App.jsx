@@ -36,13 +36,13 @@ function App() {
       <div className="ajuste">        
         <div className="inicio">
           <div>
-            Olá, eu sou <br />
+            <span className='apresentacao'>Olá, eu sou </span> <br />
             <span className="meu-nome"
             >
               {nome}
             </span>
             <br />
-            <span> Desenvolvedor Full Stack</span>
+            <span className='apresentacao'> Desenvolvedor Full Stack</span>
           </div>
           <img src={gif} alt="gif" />
         </div>

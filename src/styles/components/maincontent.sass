@@ -1,12 +1,11 @@
 @use '../variables'
 @use '../mixins'
-    
+
 #main-content
     background-color: variables.$bg-color
     flex: 2 1 0
     border-radius: variables.$container-border-radius
     padding: 3rem
-    
 
     section
         display: flex
@@ -22,7 +21,7 @@
 
             &:after
                 @include mixins.gradient-border
-            
+
         p
             color: variables.$text-color-secondary
             margin-bottom: 1rem
@@ -31,3 +30,21 @@
         .btn
             @include mixins.btn
             align-self: start
+
+@media (max-width:667px)
+    #main-content
+        flex: 2 1 0
+        padding: 1rem
+
+        section
+
+            h2
+                font-size: 25px
+                margin-bottom: 0.6rem
+                gap: .5rem
+
+            p
+                color: variables.$text-color-secondary
+                margin-bottom: 1rem
+                line-height: 1rem
+                font-size: 13px

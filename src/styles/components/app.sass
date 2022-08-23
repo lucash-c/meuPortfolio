@@ -3,8 +3,8 @@
 .portfolio
     display: flex
     flex-wrap: wrap
-    gap: 3rem 
-    padding: 3rem 
+    gap: 3rem
+    padding: 3rem
     padding-top: 0
 
 .inicio
@@ -13,11 +13,10 @@
     justify-content: center
     width: 100%
     flex-wrap: wrap
-    
 
     img
         margin-left: 30px
-        border-radius: 50%       
+        border-radius: 50%
         height: 35vh
 
 .ajuste
@@ -50,4 +49,24 @@ nav
     display: flex
     justify-content: right
     width: 100%
-    border-bottom: 1px solid #444 
+    border-bottom: 1px solid #444
+
+@media (max-width:667px)
+    .meu-nome
+        font-size: 25px
+
+    .apresentacao
+        font-size: 15px
+
+    .portfolio
+        gap: 2px
+        padding: 2px
+
+    .inicio
+        flex-direction: column
+        gap: 5px
+
+        img
+            margin-left: 30px
+            border-radius: 50%
+            height: 150px
