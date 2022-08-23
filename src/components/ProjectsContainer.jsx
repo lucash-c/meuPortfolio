@@ -35,7 +35,7 @@ const ProjectsContainer = () => {
         </li>
       </ul>
      
-      <button onClick={()=>(window.open('https://github.com/lucash-c?tab=repositories','_blank'))} target="_blank" className="btn">Ver Projetos</button>
+      <button onClick={()=>(window.open('https://github.com/lucash-c?tab=repositories','_blank'))}  className="btn">Ver Projetos</button>
     </section>
   )
 }

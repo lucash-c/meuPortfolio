@@ -5,7 +5,7 @@ import Avatar from '../img/lucas.jpg';
 import '../styles/components/sidebar.sass';
 import InformationContainer from './InformationContainer.jsx';
 
-const urlToDownload = "https://speed.hetzner.de/100MB.bin";
+const urlToDownload = "https://docs.google.com/document/d/1lh9lM80MAJALs54OL_T36o8QBhsTz7s1/edit?usp=sharing&ouid=111221245165240179954&rtpof=true&sd=true";
 
 const Sidebar = () => {
   const [download, setDownload] = useState("");
@@ -17,17 +17,8 @@ const Sidebar = () => {
       <img src={Avatar} alt="Lucas" />
       <InformationContainer />
       <button  className="btn" onClick={() => {
-        setDownload(urlToDownload);
-        setCount((old) => old + 1);
-        
-      }}>Baixar Curriculum</button>
-
-      {download && (
-        <iframe
-          src={download + "?c=" + count}
-          style={{ display: "none" }}
-        ></iframe>
-      )}
+        window.open(urlToDownload,'_blank');        
+      }}>Ver Curriculum</button>
 
     </aside>
   )
