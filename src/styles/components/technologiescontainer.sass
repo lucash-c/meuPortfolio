@@ -64,4 +64,24 @@
             svg
                 color: #3fa037
 
+@media (max-width:667px)
 
+    .technologies-container
+        margin-bottom: 1rem
+
+        .technologies-grid
+
+            gap: 1.5rem
+
+            .technology-card
+                @include mixins.center
+                gap: 5px
+                padding: .5rem
+                border: 1px solid #333
+                width: 45%
+
+                h3
+                    font-size: 12px
+
+                svg
+                    font-size: 4rem

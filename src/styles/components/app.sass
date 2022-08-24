@@ -7,36 +7,54 @@
     padding: 3rem
     padding-top: 0
 
-.inicio
-    display: flex
-    align-items: center
-    justify-content: center
-    width: 100%
-    flex-wrap: wrap
+    nav
+        display: flex
+        justify-content: right
+        width: 100%
+        border-bottom: 1px solid #444
+
+        .mobile
+            display: none
+
+    .content
+        display: flex
+        gap: 3rem
+        padding: 3rem
+
+        .side
+            width: 30%
+            heigth: 100vh
+
+    .inicio
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100%
+        flex-wrap: wrap
 
     img
         margin-left: 30px
         border-radius: 50%
         height: 35vh
 
-.ajuste
-    display: flex
-    justify-content: center
-    flex-direction: column
-    width: 100%
-    color: white
-    font-size: 25px
-    height: 80vh
-    border-bottom: 1px solid #444
+    .ajuste
+        display: flex
+        justify-content: center
+        flex-direction: column
+        width: 100%
+        color: white
+        font-size: 25px
+        height: 80vh
+        border-bottom: 1px solid #444
 
-.meu-nome
-    font-size: 50px
+    .meu-nome
+        font-size: 50px
 
-    &:after
-        content: '|'
-        margin-left: 5px
-        opacity: 1
-        animation: pisca .7s infinite
+        &:after
+            content: '|'
+            margin-left: 5px
+            opacity: 1
+            animation: pisca .7s infinite
 
 @keyframes pisca
     0%, 100%
@@ -45,28 +63,42 @@
     50%
         opacity: 0
 
-nav
-    display: flex
-    justify-content: right
-    width: 100%
-    border-bottom: 1px solid #444
-
 @media (max-width:667px)
-    .meu-nome
-        font-size: 25px
-
-    .apresentacao
-        font-size: 15px
-
     .portfolio
         gap: 2px
         padding: 2px
 
-    .inicio
-        flex-direction: column
-        gap: 5px
+        nav
+            display: flex
+            justify-content: right
+            width: 100%
+            border-bottom: 1px solid #444
+
+            .mobile
+                display: flex
+
+        .content
+            padding: 1rem
+
+            .side
+                display: none
+
+        .meu-nome
+            font-size: 25px
+
+        .alinhamento
+
+            margin: 0 auto
+
+        .apresentacao
+            font-size: 15px
+
+        .inicio
+            flex-direction: column
+            gap: 5px
 
         img
-            margin-left: 30px
+            margin-left: 0
             border-radius: 50%
             height: 150px
+            margin-top: 15px
