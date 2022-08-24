@@ -9,15 +9,19 @@
     align-items: center
     flex-direction: column
     text-align: center
-    position: relative
     padding: 3rem 0
-    
 
     img
-        max-width: 50%
+        width: 70%
         border-radius: 50%
-        top: 2rem
-        margin-bottom: 3em
+        margin-bottom: 3rem
+        margin-left: 0
 
     .btn
         @include mixins.btn
+
+@media (max-width:840px)
+
+    #sidebar img
+        width: 50%
+        margin-bottom: 1.3rem

@@ -30,7 +30,7 @@ const handlePin = () => {
         <MdAlternateEmail id="email-icon" />
         <div>
           <h3>E-mail</h3>
-          <p>lucash_c@yahoo.com.br</p>
+          <p id="email">lucash_c@yahoo.com.br</p>
         </div>
       </div>
 
