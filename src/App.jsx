@@ -5,10 +5,10 @@ import Sidebar from './components/Sidebar';
 import SocialNetworks from './components/SocialNetworks.jsx';
 import './styles/components/app.sass';
 import gif from './img/giphy.gif';
+import MenuMobile from './components/MenuMobile';
 
 function App() {
-  const [nome, setNome] = useState("")
-
+  const [nome, setNome] = useState("");
   const typeWriter = (name) => {
 
     setTimeout(() => {
@@ -28,30 +28,29 @@ function App() {
   }, [])
 
   return (
-
     <div className="portfolio">
       <nav className="nav">
-      <SocialNetworks />
+        <div className="mobile"><MenuMobile /></div>
+        <SocialNetworks />
       </nav>
-      <div className="ajuste">        
+      <div className="ajuste">
         <div className="inicio">
-          <div>
-            Olá, eu sou <br />
-            <span className="meu-nome"
-            >
-              {nome}
-            </span>
+          <div className="apresentacao">
+            <span >Olá, eu sou </span> <br />
+            <span className="meu-nome" > {nome}</span>
             <br />
-            <span> Desenvolvedor Full Stack</span>
+            <span > Desenvolvedor Full Stack</span>
           </div>
           <img src={gif} alt="gif" />
         </div>
       </div>
-      <Sidebar />
-      <MainContent />
+
+      <div className="content">
+        <div className='side'><Sidebar /></div>
+        <MainContent />
+      </div>
     </div>
   )
-
 }
 
 export default App
